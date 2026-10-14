@@ -1,6 +1,6 @@
 # TA+ | AI-Powered Grading Assistant for University Courses
 
-> Modern, responsive web dashboard mockup for **TA+**, an AI-powered grading assistant tailored for large-enrollment university courses (e.g., SKKU iCampus / Canvas LMS integration).
+> Modern, responsive web dashboard mockup for **TA+**, an AI-powered grading assistant tailored for large-enrollment university courses.
 
 Built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and **Lucide Icons**.
 
@@ -38,9 +38,9 @@ Built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, and *
   - Direct verbatim quotes cited word-for-word from their submission.
   - Violated syllabus rubric clauses explained clearly.
   - Constructive advice on how to earn full points in the next assignment.
-- **Export & Sync Capabilities**:
-  - `Export to CSV (iCampus)`: Generates real CSV export formatted for SKKU iCampus / Canvas Gradebooks.
-  - `Publish Report to Student`: Direct LMS student portal dispatch.
+- **Export & Feedback Sharing**:
+  - `Export to CSV`: Generates real CSV export containing scores, breakdown, and quotations.
+  - `Publish Report to Student`: Direct student feedback release.
   - `Download Student PDF`: Printable official feedback report.
 
 ---

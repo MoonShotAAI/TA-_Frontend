@@ -58,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     AI Grader
                   </span>
                 </div>
-                <p className="text-[11px] font-medium text-slate-700">SKKU iCampus Integration</p>
+                <p className="text-[11px] font-medium text-slate-700">Intelligent Rubric Grading</p>
               </div>
             </div>
 
@@ -137,7 +137,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
             </div>
 
-            {/* Distinct "Export to CSV (iCampus)" Button */}
+            {/* Export to CSV Button */}
             <button
               onClick={onExportCsv}
               disabled={isExporting}
@@ -150,7 +150,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {exportSuccess ? (
                 <>
                   <Check className="w-4 h-4 text-white" />
-                  <span>iCampus CSV Exported!</span>
+                  <span>CSV Exported!</span>
                 </>
               ) : isExporting ? (
                 <>
@@ -160,9 +160,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               ) : (
                 <>
                   <FileSpreadsheet className="w-4 h-4 text-blue-200 group-hover:scale-110 transition-transform" />
-                  <span>Export to CSV (iCampus)</span>
+                  <span>Export to CSV</span>
                   <span className="hidden sm:inline-block px-1.5 py-0.2 rounded bg-white/20 text-[10px] text-blue-100 font-mono">
-                    LMS
+                    CSV
                   </span>
                 </>
               )}

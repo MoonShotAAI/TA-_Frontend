@@ -616,7 +616,7 @@ export const SplitPaneGradingView: React.FC<SplitPaneGradingViewProps> = ({
                 }`}
               >
                 <Check className="w-3.5 h-3.5" />
-                <span>{isApproved ? 'Approved & Synced' : 'Approve & Next (Space)'}</span>
+                <span>{isApproved ? 'Approved' : 'Approve & Next (Space)'}</span>
               </button>
             </div>
           </div>

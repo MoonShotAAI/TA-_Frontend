@@ -1,6 +1,6 @@
 import { RubricEvidence, StudentSubmission } from '@/types/grading';
 
-export function exportToIcampusCsv(
+export function exportToCsv(
   submission: StudentSubmission,
   rubricItems: RubricEvidence[]
 ) {
@@ -23,7 +23,7 @@ export function exportToIcampusCsv(
     'Evaluation Status',
     'Deduction Reasons',
     'Evidence Quotations',
-    'iCampus Sync Timestamp',
+    'Export Timestamp',
   ];
 
   const evidenceQuotes = rubricItems
@@ -51,7 +51,7 @@ export function exportToIcampusCsv(
   link.setAttribute('href', url);
   link.setAttribute(
     'download',
-    `iCampus_Grades_${submission.courseCode}_${submission.studentId}_${new Date().toISOString().slice(0, 10)}.csv`
+    `Grades_${submission.courseCode}_${submission.studentId}_${new Date().toISOString().slice(0, 10)}.csv`
   );
   document.body.appendChild(link);
   link.click();

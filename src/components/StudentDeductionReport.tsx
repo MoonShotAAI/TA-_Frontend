@@ -65,7 +65,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
               <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-blue-500/20 text-blue-300 border border-blue-400/30">
                 Official Feedback Report
               </span>
-              <span className="text-xs text-slate-400">SKKU iCampus LMS Gradebook</span>
+              <span className="text-xs text-slate-400">Evaluation Gradebook</span>
             </div>
             <h3 className="text-xl font-bold tracking-tight text-white mt-1">
               Assignment 2: Student Deduction Breakdown
@@ -236,7 +236,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
       <div className="pt-4 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="text-xs text-slate-700 flex items-center gap-2">
           <FileCheck2 className="w-4 h-4 text-slate-500" />
-          <span>Digitally signed &amp; timestamped for SKKU College of Computing</span>
+          <span>Digitally signed &amp; timestamped evaluation record</span>
         </div>
 
         <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
@@ -258,7 +258,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
             }`}
           >
             <Send className="w-3.5 h-3.5" />
-            <span>{isPublished ? 'Published to Student iCampus' : 'Publish Report to Student'}</span>
+            <span>{isPublished ? 'Report Published' : 'Publish Report to Student'}</span>
           </button>
         </div>
       </div>
@@ -286,7 +286,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
                 </span>
               </div>
               <p className="text-xs text-slate-700 mt-0.5">
-                Exact preview of what <strong className="text-slate-800">{submission.studentName}</strong> receives on iCampus. Direct evidence citations minimize grade appeals.
+                Exact preview of feedback provided to <strong className="text-slate-800">{submission.studentName}</strong>. Direct evidence citations minimize grade appeals.
               </p>
             </div>
           </div>
@@ -301,7 +301,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
               }`}
             >
               <Send className="w-3.5 h-3.5" />
-              <span>{isPublished ? 'Published' : 'Publish to iCampus'}</span>
+              <span>{isPublished ? 'Published' : 'Publish Report'}</span>
             </button>
 
             <button
@@ -336,7 +336,7 @@ export const StudentDeductionReport: React.FC<StudentDeductionReportProps> = ({
                     Student Deduction Report · Modal Inspection
                   </h3>
                   <p className="text-[11px] text-slate-700">
-                    SKKU iCampus Transparency Mode · Min-jun Kim (2021312894)
+                    Student Feedback View · Min-jun Kim (2021312894)
                   </p>
                 </div>
               </div>

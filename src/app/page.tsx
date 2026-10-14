@@ -12,7 +12,7 @@ import {
   initialRubricItems,
 } from '@/data/mockGradingData';
 import { RubricEvidence, StudentSubmission } from '@/types/grading';
-import { exportToIcampusCsv } from '@/utils/csvExport';
+import { exportToCsv } from '@/utils/csvExport';
 import {
   Sparkles,
   Command,
@@ -102,22 +102,22 @@ export default function GradingWorkspacePage() {
   const handleExportCsv = () => {
     setIsExporting(true);
     setTimeout(() => {
-      exportToIcampusCsv(submission, rubricItems);
+      exportToCsv(submission, rubricItems);
       setIsExporting(false);
       setExportSuccess(true);
-      showToast('Generated & downloaded official iCampus Gradebook CSV export!', 'success');
+      showToast('Gradebook CSV export generated & downloaded!', 'success');
       setTimeout(() => setExportSuccess(false), 3000);
     }, 700);
   };
 
   const handleApproveSubmission = () => {
     setIsApproved(true);
-    showToast(`✓ Evaluation approved for ${submission.studentName} (${submission.studentId})! Synced to iCampus queue.`, 'success');
+    showToast(`✓ Evaluation approved for ${submission.studentName} (${submission.studentId})!`, 'success');
   };
 
   const handlePublishToStudent = () => {
     setIsPublishedToStudent(true);
-    showToast(`Deduction breakdown successfully published to ${submission.studentName}'s iCampus portal.`, 'success');
+    showToast(`Deduction breakdown successfully published for ${submission.studentName}.`, 'success');
   };
 
   return (
@@ -216,11 +216,9 @@ export default function GradingWorkspacePage() {
           <div className="flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-blue-900" />
             <span className="font-bold text-slate-800">TA+ Academic Assistant</span>
-            <span>· Sungkyunkwan University (SKKU) College of Computing</span>
+            <span>· Automated Rubric Evaluation Platform</span>
           </div>
           <div className="flex items-center gap-4 text-slate-600">
-            <span>Canvas / iCampus Gradebook API v2</span>
-            <span>·</span>
             <span>Deterministic Rubric Testing Engine</span>
             <span>·</span>
             <span className="text-emerald-700 font-semibold flex items-center gap-1">
